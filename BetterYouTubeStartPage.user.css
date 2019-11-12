@@ -38,9 +38,9 @@
         height: 20px !important;
         margin-top: 4px !important;
         margin-right: 4px !important;
-if hideAvatar {
-        display: none !important;
-}
+        if hideAvatar {
+          display: none !important;
+        }
     }
 
     #meta.ytd-rich-grid-video-renderer {
