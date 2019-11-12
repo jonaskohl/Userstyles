@@ -1,9 +1,13 @@
 /* ==UserStyle==
 @name         Better YouTube Start Page Layout
+@description  Changes the new "large-thumbnail" view of the YouTube start page back to a more familiar layout.
 @namespace    de.jonaskohl.betterytstarpage
-@version      1.0 (Nov 12th 2019)
+@author       Jonas Kohl
+@homepageURL  https://jonaskohl.de/
+@supportURL   https://github.com/jonaskohl/Userstyles/issues/
+@updateURL    https://raw.githubusercontent.com/jonaskohl/Userstyles/master/BetterYouTubeStartPage.user.css
+@version      1.0.0
 @license      MIT
-@copyright    (c) 2019 Jonas Kohl <https://jonaskohl.de/>
 @preprocessor stylus
 
 @var          text     itemsPerRow  "Items (normal videos) per row" 6
@@ -11,6 +15,7 @@
 @var          text     moviesPerRow "Movies per row" 6
 @var          checkbox hideAvatar   "Hide avatar (like old start page)" 1
 */
+/* Last updated Nov 12th 2019 */
 
 @-moz-document regexp("https?://(www\\.)?youtube.com/") {
     ytd-rich-grid-renderer {
