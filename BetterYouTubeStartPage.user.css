@@ -1,0 +1,53 @@
+/* ==UserStyle==
+@name         Better YouTube Start Page Layout
+@namespace    de.jonaskohl.betterytstarpage
+@version      1.0 (Nov 12th 2019)
+@license      MIT
+@copyright    (c) 2019 Jonas Kohl <https://jonaskohl.de/>
+@preprocessor stylus
+
+@var          text     itemsPerRow  "Items (normal videos) per row" 6
+@var          text     postsPerRow  "Posts per row" 3
+@var          text     moviesPerRow "Movies per row" 6
+@var          checkbox hideAvatar   "Hide avatar (like old start page)" 1
+*/
+
+@-moz-document regexp("https?://(www\\.)?youtube.com/") {
+    ytd-rich-grid-renderer {
+        --ytd-rich-grid-items-per-row:  itemsPerRow  !important;
+        --ytd-rich-grid-posts-per-row:  postsPerRow  !important;
+        --ytd-rich-grid-movies-per-row: moviesPerRow !important;
+        
+        max-width: 1400px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+
+    #avatar.ytd-rich-grid-video-renderer {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    #avatar-link.ytd-rich-grid-video-renderer {
+        height: 20px !important;
+        margin-top: 4px !important;
+        margin-right: 4px !important;
+if hideAvatar {
+        display: none !important;
+}
+    }
+
+    #meta.ytd-rich-grid-video-renderer {
+        overflow-x: hidden;
+        padding-right: 0px !important;
+    }
+
+    h3.ytd-rich-grid-video-renderer {
+        margin: 4px 0 2px 0 !important;
+    }
+
+    #video-title.ytd-rich-grid-video-renderer {
+        font-size: 1.2em !important;
+    }
+}
