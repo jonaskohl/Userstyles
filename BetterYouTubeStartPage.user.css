@@ -8,7 +8,7 @@
 @updateURL    https://raw.githubusercontent.com/jonaskohl/Userstyles/master/BetterYouTubeStartPage.user.css
 @version      1.0.0
 @license      MIT
-*/
+==/UserStyle== */
 /* Last updated Nov 12th 2019 */
 
 @-moz-document regexp("https?://(www\\.)?youtube.com/") {
