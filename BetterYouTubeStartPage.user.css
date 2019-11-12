@@ -8,20 +8,14 @@
 @updateURL    https://raw.githubusercontent.com/jonaskohl/Userstyles/master/BetterYouTubeStartPage.user.css
 @version      1.0.0
 @license      MIT
-@preprocessor stylus
-
-@var          text     itemsPerRow  "Items (normal videos) per row" 6
-@var          text     postsPerRow  "Posts per row" 3
-@var          text     moviesPerRow "Movies per row" 6
-@var          checkbox hideAvatar   "Hide avatar (like old start page)" 1
 */
 /* Last updated Nov 12th 2019 */
 
 @-moz-document regexp("https?://(www\\.)?youtube.com/") {
     ytd-rich-grid-renderer {
-        --ytd-rich-grid-items-per-row:  itemsPerRow  !important;
-        --ytd-rich-grid-posts-per-row:  postsPerRow  !important;
-        --ytd-rich-grid-movies-per-row: moviesPerRow !important;
+        --ytd-rich-grid-items-per-row:  6 !important;
+        --ytd-rich-grid-posts-per-row:  3 !important;
+        --ytd-rich-grid-movies-per-row: 1 !important;
         
         max-width: 1400px !important;
         margin-left: auto !important;
@@ -38,9 +32,7 @@
         height: 20px !important;
         margin-top: 4px !important;
         margin-right: 4px !important;
-        if hideAvatar {
-          display: none !important;
-        }
+        display: none !important;
     }
 
     #meta.ytd-rich-grid-video-renderer {
